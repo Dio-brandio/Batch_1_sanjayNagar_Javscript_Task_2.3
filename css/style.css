@@ -1,0 +1,169 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.bg-gradient {
+    background: linear-gradient(to right, #d8aeff, #1c92d2) !important;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+body::-webkit-scrollbar {
+    width: .25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, #d8aeff3a, #1c92d241) !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #8400ff, #00a6ff) !important;
+    border-radius: 12px;
+}
+body{
+    overflow-x: hidden;
+}
+
+input {
+    transition: .2s ease-in-out !important;
+}
+
+.placeholder-color::placeholder {
+    color: white;
+}
+
+.position-0 {
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 999;
+}
+
+.border-1 {
+    border: 1px solid #29232385 !important;
+    border-radius: 8px;
+}
+
+.border-2 {
+    border: 1px solid #222222 !important;
+    border-radius: 8px;
+}
+
+section {
+    user-select: none;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-indigo,
+.bg-indigo {
+    background: indigo !important;
+    color: white !important;
+}
+
+.btn.failBtn {
+    border: 1px solid #dc3545; 
+}
+
+.btn.passBtn {
+    border: 1px solid #0d6efd;
+}
+
+#inputForm .btn {
+    color: inherit !important;
+    background-color: transparent;
+}
+
+.btn-info {
+    color: #000 !important;
+    background-color: #0dcaf0 !important;
+}
+
+.btn-danger {
+    color: #000 !important;
+    background-color: #dc3545 !important;
+}
+
+table {
+    overflow: hidden;
+    user-select: none;
+    border-radius: 12px;
+}
+
+.fade-left {
+    animation: fade-left 0.2s ease-out forwards;
+    transition: 0.2s ease-in-out;
+}
+
+@keyframes fade-left {
+    0% {
+        opacity: 0;
+        translate: 100% 0;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0 0%;
+    }
+}
+
+.fade-right {
+    animation: fade-right 0.2s ease-in forwards;
+}
+
+@keyframes fade-right {
+    100% {
+        opacity: 0;
+        translate: 0 100%;
+    }
+
+    0% {
+        opacity: 1;
+        translate: 0 0%;
+    }
+}
+
+.sm-d-block {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    html{
+        font-size: 12px !important;
+    }
+    thead {
+        display: none;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        border-top: 1px solid #c0c0c0a8;
+        border-bottom: 1px solid #c0c0c0a8;
+    }
+
+    #inputTable td {
+        text-align: left;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+        border: none !important;
+    }
+
+    #reportTable td,
+    #percentageTable td
+    {
+        text-align: center;
+        border: none !important;;
+    }
+
+    #reportTable th,
+    #percentageTable th {
+        text-align: center;
+       
+    }
+
+    .sm-d-block {
+        display: block !important;
+        margin: .25rem 0;
+    }
+}
